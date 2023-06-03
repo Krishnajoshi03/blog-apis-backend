@@ -30,10 +30,7 @@ import jakarta.servlet.Filter;
 @EnableGlobalMethodSecurity(prePostEnabled = true)
 public class SecurityConfig {
 
-    public static final String[] PUBLIC_URLS = {"/api/v1/auth/login", "/v3/api-docs", "/v2/api-docs",
-            "/swagger-resources/**", "/swagger-ui/**", "/webjars/**"
-
-    };
+    public static final String[] PUBLIC_URLS = {"/api/v1/auth/login"};
 
     @Autowired
     private CustomUserDetailService customUserDetailService;
